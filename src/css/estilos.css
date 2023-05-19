@@ -1,0 +1,139 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #858585ad;
+    color: #000000;
+}
+
+body.modo-escuro{
+    background-color: #212121;
+    color: #f5f5f5;
+}
+
+header{
+    background-color: rgb(1, 22, 116);
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+header .logo, 
+header .imagem-botao{
+    width: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+#botao-alterar-tempo{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header .logo:hover, 
+header .imagem-botao:hover
+{
+    transform: scale(1.40);
+    cursor: pointer;
+}
+
+main .cartao-champion:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main{
+    padding: 25px;
+}
+
+main .listagem-champions{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .cartao-champion{
+    background-color: #d8e3ec;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .cartao-champion:hover{
+    background-color: #96d9d6;
+}
+
+.modo-escuro .cartao-champion{
+    background-color: #a8a8a8;
+}
+
+main .cartao-champion .informacoes{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+main .cartao-champion .informacoes span{
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .cartao-champion .img-champion{
+    width: 130px;
+    height: 130px;
+}
+
+main .cartao-champion .lane,
+main .cartao-champion .lane .lane-adc,
+main .cartao-champion .lane .lane-jungle, 
+main .cartao-champion .lane .lane-mid,
+main .cartao-champion .lane .lane-suporte,
+main .cartao-champion .lane .lane-top{
+
+    display: flex;
+    gap: 15px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.lane-mid{
+background-color: #6390f0;
+}
+
+.lane-top{
+    background-color: rgb(255, 59, 59);
+}
+
+.lane-suporte{
+    background-color: #ee8130;
+}
+
+.lane-jungle{
+    background-color: #7ac74c;
+}
+
+.lane-adc{
+    background-color: #a6b91a;
+}
+
+main .descricao{
+    max-height: 140px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+
+
+
+
+
+
+
